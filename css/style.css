@@ -74,28 +74,33 @@ body {
     color: var(--green-color)
 }
 
-.navbar .search {
+.navbar .navbar-form {
     border-left: 1px solid var(--green-color);
     transition: 0.5s;
 }
 
-.navbar .search input {
+.navbar .navbar-form .input-group input {
     width: 0;
     padding: 0;
-    border: none;
-    outline: none;
-    transition: 0.5s;
-    border-bottom: 1px solid var(--green-color);
-    color: var(--green-color);
+    border: none !important;
+    outline: none !important;
+    transition: 0.5s !important;
+    border-bottom: 1px solid var(--green-color) !important;
+    color: var(--green-color) !important;
 }
 
-.navbar .search:hover>input {
+.navbar .navbar-form .input-group input:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-form .input-group:hover>input {
     width: 120px;
 }
 
-.navbar .search svg {
+.navbar .navbar-form .input-group .btn svg {
     color: var(--green-color);
 }
+
 
 .navbar .navbar-toggler {
     color: white;
