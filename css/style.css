@@ -1,0 +1,380 @@
+:root {
+    /* --dark-color: #19283f; */
+    --dark-color: #181818;
+    /* --green-color: #33d1cc; */
+    --green-color: #D8A01B;
+    --section-color: #282828;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-color) !important;
+}
+
+.main-title::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.main-btn {
+    border: 1px solid var(--green-color) !important;
+    transition: 0.5s !important;
+}
+
+.main-btn:hover {
+    background-color: transparent !important;
+    color: var(--green-color) !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--dark-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--green-color);
+}
+
+/* Start Navbar */
+
+.navbar {
+    background-color: var(--dark-color);
+}
+
+
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+    color: var(--green-color)
+}
+
+.navbar .navbar-form {
+    border-left: 1px solid var(--green-color);
+    transition: 0.5s;
+}
+
+.navbar .navbar-form .input-group input {
+    width: 0;
+    padding: 0;
+    border: none !important;
+    outline: none !important;
+    transition: 0.5s !important;
+    border-bottom: 1px solid var(--green-color) !important;
+    color: var(--green-color) !important;
+}
+
+.navbar .navbar-form .input-group input:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-form .input-group:hover>input {
+    width: 120px;
+}
+
+.navbar .navbar-form .input-group .btn svg {
+    color: var(--green-color);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* End Navbar */
+
+/* Start Landing */
+.landing {
+    /* background-color: var(--dark-color); */
+    min-height: calc(100vh - 72px);
+
+}
+
+.landing .img-1 {
+    width: 480px;
+}
+
+.landing img {
+    width: 350px;
+    user-select: none;
+}
+
+@media (max-width:767px) {
+    .landing .img-1 {
+        width: 280px;
+    }
+
+    .landing img {
+        width: 170px;
+    }
+}
+
+.main-btn {
+    background-color: var(--green-color) !important;
+
+}
+
+
+/* End Landing */
+
+/* Start Features */
+.features {
+    background-color: var(--section-color);
+}
+
+.features .icon-holder {
+    height: 200px;
+}
+
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+    font-size: 12rem;
+    /* color: #2a2828; */
+    color: var(--dark-color);
+}
+
+.features .icon-holder .icon {
+    color: var(--green-color);
+}
+
+.features .feed h4 {
+    color: var(--green-color)
+}
+
+/* End Features */
+
+/* Start Our Work */
+.our-work ul .active {
+    background-color: whitesmoke;
+    color: var(--dark-color);
+
+}
+
+.our-work ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--green-color);
+    transition: 0.5s;
+}
+
+.our-work ul li:hover {
+    background-color: whitesmoke;
+    color: var(--dark-color);
+}
+
+.our-work .box {
+    padding: 5px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.our-work .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: #d89f1bc5;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: whitesmoke;
+    transition: 0.5s;
+    transform: translateX(calc(-100% - 5px));
+}
+
+.our-work .box:hover::before {
+    transform: translateX(calc(0px));
+}
+
+.our-work .box:hover {
+    box-shadow: 1px 2px 20px 1px #fff8f84a;
+}
+
+/* End Our Work */
+
+/* Start Stuff */
+.stuff {
+    background-color: var(--section-color);
+}
+
+.stuff .description {
+    max-width: 500px;
+}
+
+.stuff .text h4 {
+    color: var(--green-color);
+}
+
+/* End Stuff */
+
+/* Start Team */
+.team h2 {
+    color: var(--green-color);
+}
+
+.team .box {
+    box-shadow: 0px 0px 20px 1px #000000ab;
+    transition: 0.5s;
+}
+
+.team .box:hover {
+    box-shadow: 0px 0px 20px 1px #57565647;
+}
+
+.team .box img {
+    transition: 0.5s;
+}
+
+.team .box:hover>.image img {
+    transform: scale(1.1);
+}
+
+.team .box .info {
+    height: 61px;
+    background-color: var(--green-color);
+}
+
+.team .box h4 {
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.team .box .info .deta {
+    transition: 0.5s;
+    transform: translateX(100%);
+}
+
+.team .box .info:hover .deta {
+    transform: translateX(0%);
+}
+
+.team .box .info:hover h4 {
+    transform: translateX(-100%);
+}
+
+.team .box .info .deta span {
+    font-size: 1.1rem;
+}
+
+.team .box .info ul li a {
+    color: var(--section-color);
+
+}
+
+.team .box .info .facebook:hover {
+    color: #1877f2;
+}
+
+.team .box .info .twitter:hover {
+    color: #1da1f2;
+}
+
+.team .box .info .linkedin:hover {
+    color: #0077b5;
+}
+
+.team .box .info .youtube:hover {
+    color: #ff0000;
+}
+
+.team .box blockquote {
+    height: 128px;
+    background-color: var(--section-color);
+}
+
+/* End Team */
+
+/* Start Techs */
+.techs {
+    background-color: var(--section-color);
+}
+
+/* End Techs */
+/* Start Projects */
+.projects h2 {
+    color: var(--green-color)
+}
+
+/* End Projects */
+
+/* Start Footer */
+.footer {
+    background-color: var(--section-color);
+}
+
+.footer .info .copyright span:first-of-type {
+    color: var(--green-color);
+}
+
+.footer .contact ul li svg {
+    width: 20px;
+    height: 20px;
+    transition: 0.5s;
+}
+
+.footer .contact ul li svg:hover {
+    transform: translateY(-5px);
+}
+
+.footer .facebook {
+    background-color: #1877f2;
+}
+
+.footer .twitter {
+    background-color: #1da1f2;
+}
+
+.footer .linkedin {
+    background-color: #0077b5;
+}
+
+.footer .youtube {
+    background-color: #ff0000;
+}
+
+.footer .links ul li {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.footer .links ul li:hover {
+    transform: translateX(3%);
+    color: whitesmoke;
+}
+
+
+/* End Footer */
