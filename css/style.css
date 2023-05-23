@@ -60,9 +60,7 @@ body {
     background-color: var(--dark-color);
 }
 
-/* .navbar .navbar-brand img {
-    width: 100px;
-} */
+
 
 .navbar .navbar-nav .nav-link {
     color: white;
@@ -100,7 +98,6 @@ body {
 .navbar .navbar-form .input-group .btn svg {
     color: var(--green-color);
 }
-
 
 .navbar .navbar-toggler {
     color: white;
